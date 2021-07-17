@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="card mt-5">
+            <table class="table table-dark">
+              <thead>
+                <h2 class="text-center mt-2">To do List</h2>
+                <div class="text-center">
+                  <button
+                    type="button"
+                    class="btn btn-success btn-lg my-2 add"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    ADD TODOS <i class="far fa-calendar-plus"></i>
+                  </button>
+                </div>
+
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="exampleModal"
+                  tabindex="-1"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                          ISH REJANGIZNI QO'SHING
+                        </h5>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="container">
+                          <div class="card bg-dark">
+                            <div class="card-header">
+                              <h4 class="text-center text-white">
+                                Reja qo'shish <i class="far fa-list-alt"></i>
+                              </h4>
+                            </div>
+                            <div class="card-body">
+                              <form name="Myform">
+                                <div class="Myform2">
+                                  <label for="name" class="text-white"
+                                    >Ish nomini kiriting</label
+                                  >
+                                  <input
+                                    type="text"
+                                    id="name"
+                                    class="form-control"
+                                    name="name"
+                                  />
+
+                                  <label for="duration" class="text-white"
+                                    >Davomiyligi</label
+                                  >
+                                  <input
+                                    type="text"
+                                    id="duration"
+                                    class="form-control"
+                                    name="duration"
+                                  />
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer Myform">
+                        <button
+                          type="button"
+                          class="btn btn-primary close"
+                          data-bs-dismiss="modal"
+                        >
+                          Close <i class="fas fa-times"></i>
+                        </button>
+                        <button
+                          onclick="trimqilish()"
+                          type="button"
+                          class="btn btn-primary add2 activate"
+                          id="add2"
+                        >
+                          Add <i class="far fa-plus-square"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <tr>
+                  <th>Num <i class="fas fa-list-ol"></i></th>
+                  <th>Name <i class="fas fa-file-signature"></i></th>
+                  <th>Duration <i class="fas fa-clock"></i></th>
+                  <th>Edit <i class="fas fa-pencil-alt"></i></th>
+                  <th>Delete <i class="far fa-trash-alt"></i></th>
+                </tr>
+              </thead>
+              <tbody id="forjs">
+                <!-- Malumot Js fayilidan ko'chiriladi-->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

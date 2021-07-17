@@ -1,0 +1,19 @@
+.add{
+    width: 200px;
+}
+th{
+    font-size: 25px;
+}
+.add2{
+    background: rgb(167, 1, 167) !important;
+    color: #fff !important;
+    cursor: pointer !important;
+    border-radius: 3px !important;
+    margin-left: 5px !important;
+    opacity: 0.6 !important;
+    pointer-events: none !important;
+}
+.activate{
+    opacity: 1 !important;
+    pointer-events: auto !important;
+}
